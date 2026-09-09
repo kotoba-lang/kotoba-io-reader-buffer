@@ -5,15 +5,15 @@
   here is the DEFINITION, and this repo's deps.edn names exactly the
   definitions it reaches -- nothing else.
 "
-  (:require [kotoba.io.ireader :refer [IReader read!]]
+  (:require [kotoba.io.reader :refer [Reader read!]]
             [kotoba.io.to-bytes :refer [to-bytes]])
 )
 
 (defn reader-buffer
-  "Adapt `buf` as a one-shot IReader: a single read returns the whole buffer,
+  "Adapt `buf` as a one-shot Reader: a single read returns the whole buffer,
   then EOF."
   [buf]
   (let [done (atom false)]
-    (reify IReader
+    (reify Reader
       (read! [_]
         (if @done nil (do (reset! done true) (to-bytes buf)))))))
