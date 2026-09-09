@@ -1,11 +1,11 @@
 {:paths ["src"]
  :deps {
-        io.github.kotoba-lang/io-ireader
-        {:git/url "https://github.com/kotoba-lang/io-ireader.git"
-         :git/sha "b842f63c8d312bd724dbafd92fba276cc3dcb689"}
-        io.github.kotoba-lang/io-to-bytes
-        {:git/url "https://github.com/kotoba-lang/io-to-bytes.git"
-         :git/sha "7a6920b80425c9b1004cff29f2c02d090844d2e3"}}
+        io.github.kotoba-lang/kotoba-io-ireader
+        {:git/url "https://github.com/kotoba-lang/kotoba-io-ireader.git"
+         :git/sha "4f7d25cd73137e772510127e990ff1ec7ebb75bd"}
+        io.github.kotoba-lang/kotoba-io-to-bytes
+        {:git/url "https://github.com/kotoba-lang/kotoba-io-to-bytes.git"
+         :git/sha "aa3a74bd76bd25306462be6ae3765fcabfc9ffb7"}}
  :aliases
  {:test {:extra-paths ["test"]
          :extra-deps {io.github.cognitect-labs/test-runner

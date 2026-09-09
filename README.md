@@ -1,4 +1,4 @@
-# io-reader-buffer
+# kotoba-io-reader-buffer
 
 `kotoba.io.reader-buffer/reader-buffer`
 

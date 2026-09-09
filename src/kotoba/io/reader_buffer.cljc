@@ -6,7 +6,8 @@
   definitions it reaches -- nothing else.
 "
   (:require [kotoba.io.ireader :refer [IReader read!]]
-            [kotoba.io.to-bytes :refer [to-bytes]]))
+            [kotoba.io.to-bytes :refer [to-bytes]])
+)
 
 (defn reader-buffer
   "Adapt `buf` as a one-shot IReader: a single read returns the whole buffer,
